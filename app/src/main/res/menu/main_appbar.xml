@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/action_refresh_button"
+            android:icon="@drawable/ic_stat_name"
+            android:layout_width="10dp"
+            android:title="refresh_button"
+            android:layout_weight="1"
+            android:visible="true"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:title="@+id/action_more"
+            android:id="@+id/action_more"
+            android:icon="@drawable/ic_more_vert_black_24dp"
+            app:showAsAction="always" >
+
+            <menu>
+                <item
+                    android:id="@+id/action_change_company"
+                    android:icon="@drawable/ic_domain_white_24dp"
+                    android:title="Switch Company"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_offline_mode"
+                    android:icon="@drawable/ic_offline_pin_white_24dp"
+                    android:title="Offline mode"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_setings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_settings_white_24dp"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_pending_updates"
+                    android:title="Pending updates"
+                    android:icon="@drawable/ic_update_white_24dp"
+                    app:itemTextColor="@color/colorBlack"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_send_pending_updates"
+                    android:title="Send Pending updates"
+                    android:icon="@drawable/ic_send_white_24dp"
+                    app:itemTextColor="@color/colorBlack"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_logout"
+                    android:icon="@drawable/ic_logout_white_24dp"
+                    android:title="Logout"
+                    app:itemTextColor="@color/colorBlack"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/about_us"
+                    android:title="About Us"
+                    android:icon="@drawable/ic_info_white_24dp"
+                    app:itemTextColor="@color/colorBlack"
+                    app:showAsAction="ifRoom" />
+            </menu>
+        </item>
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkGray">
+
+    <LinearLayout
+            android:layout_margin="@dimen/margin_sm"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_marginBottom="@dimen/m4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_location_green_32dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h5"
+                    android:text="Locations"/>
+
+        </LinearLayout>
+
+
+        <Spinner
+                android:id="@+id/spnnr_locations"
+                android:layout_marginBottom="@dimen/m4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/cv_select_location"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/colorClockText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    app:fontFamily="@font/helveticaneue"
+                    android:layout_marginTop="@dimen/margin_sm"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:layout_marginRight="@dimen/m4"
+                    android:layout_marginLeft="@dimen/m4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h6"
+                    android:text="Select"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+
+    <color name="transparent">#CDCDCD</color>
+
+
+
+    <color name="colorPurple">#800080</color>
+    <color name="colorLimeGreen">#32CD32</color>
+    <color name="colorActive">#008000</color>
+    <color name="colorWasActive">#FF8C00</color>
+    <color name="colorClockText">#1492E6</color>
+
+    <color name="colorSilver">#C0C0C0</color>
+    <color name="colorGray">#8dbab3</color>
+    <color name="colorDarkGray">#2f2f2f</color>
+    <color name="colorDarkDarkGray">#191919</color>
+    <color name="colorLightBlack">#0c0c0c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBackground">?android:colorBackground</color>
+</resources>

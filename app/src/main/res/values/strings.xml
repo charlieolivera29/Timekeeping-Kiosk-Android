@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kiosk</string>
+    <string name="loading_clock">Loading Clock...</string>
+</resources>

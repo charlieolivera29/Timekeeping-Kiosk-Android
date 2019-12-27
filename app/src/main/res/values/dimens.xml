@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<dimen name="text_size">20sp</dimen>-->
+
+    <!--Font size-->
+    <dimen name="h1">96sp</dimen>
+    <dimen name="h2">60sp</dimen>
+    <dimen name="h3">48sp</dimen>
+    <dimen name="h3p5">32sp</dimen>
+    <dimen name="h4">24sp</dimen>
+    <dimen name="h5">20sp</dimen>
+    <dimen name="h6">16sp</dimen>
+
+    <!--Margins-->
+    <dimen name="m1">96dp</dimen>
+    <dimen name="m2">60dp</dimen>
+    <dimen name="m3">48dp</dimen>
+    <dimen name="m4">24dp</dimen>
+    <dimen name="m5">20dp</dimen>
+    <dimen name="m6">16dp</dimen>
+
+
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_lg">12dp</dimen>
+    <dimen name="margin_xl">18dp</dimen>
+    <dimen name="margin_xxl">24dp</dimen>
+
+    <dimen name="recyclerview_margin">1dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="cardview_elevation">8dp</dimen>
+    <dimen name="cardview_radius">8dp</dimen>
+
+    <dimen name="dashboard_card_count">40dp</dimen>
+    <dimen name="dashboard_radius_card_count">12dp</dimen>
+
+
+</resources>

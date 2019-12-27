@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.valdesekamdem.library:md-toast:0.9.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1d3737fcfe7b32f4694104833867ce50/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1d3737fcfe7b32f4694104833867ce50/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.valdesekamdem.library/md-toast/0.9.0/813409d2351c0e5ce2914a855c9f2ca8b455011c/md-toast-0.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

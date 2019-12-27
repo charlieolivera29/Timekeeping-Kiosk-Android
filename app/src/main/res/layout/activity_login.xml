@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorDarkDarkGray"
+        tools:context=".Login"
+        android:gravity="center"
+        android:weightSum="12">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+        <TextView
+                android:text="KIOSK LOGIN"
+                app:autoSizeTextType="uniform"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="@color/colorClockText"
+                android:layout_marginBottom="25dp"
+                android:gravity="center" />
+
+    </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textAutoComplete|textEmailAddress"
+                android:ems="10"
+                android:id="@+id/emailField"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Email"
+                app:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:gravity="center"
+                android:id="@+id/passwordField"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                app:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:inputType="textAutoComplete"
+                android:ems="10"
+                android:id="@+id/linkField"
+                android:layout_marginTop="20dp"
+                android:hint="Link"
+                app:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_horizontal"
+                android:weightSum="10">
+
+            <Button
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/loginButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

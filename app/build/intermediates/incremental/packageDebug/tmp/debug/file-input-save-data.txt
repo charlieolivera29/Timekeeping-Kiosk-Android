@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Dec 20 10:25:14 SGT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Acer\\AndroidStudioProjects\\Kiosk\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.path=classes.dex
+0.set=DEX
+count=1

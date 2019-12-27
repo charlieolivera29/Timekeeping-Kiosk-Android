@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorDarkDarkGray"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="1dp"
+        android:id="@+id/company_details">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/companyDetailsCardViewID"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card_view:cardBackgroundColor="@color/colorDarkGray"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent">
+
+                            <FrameLayout
+                                    android:id="@+id/company_status"
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="start"
+                                    android:background="@color/colorGray"/>
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_domain_white_24dp" />
+
+                            <TextView
+                                    android:text="N/A"
+                                    android:id="@+id/company_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/colorWhite"/>
+
+                            <ImageView
+                                    android:id="@+id/company_options"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_more_vert_black_24dp"
+                            />
+                        </LinearLayout>
+        </android.support.v7.widget.CardView>
+</FrameLayout>
