@@ -6,4 +6,5 @@ class pendingItem(
     var reference: String,
     var pin: String,
     var date: String,
-    var location_id: String)
+    var location_id: String
+)

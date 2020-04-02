@@ -24,5 +24,11 @@ public interface UploadAPIs {
             @Part("reference") RequestBody reference,
             @Part("api_token") RequestBody api_token,
             @Part("link") RequestBody link,
-            @Part MultipartBody.Part image);
+            @Part MultipartBody.Part image,
+
+
+            @Query("link") String queryLink
+
+
+            );
 }

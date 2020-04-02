@@ -9,35 +9,35 @@
         android:orientation="vertical"
         android:gravity="center"
         android:weightSum="20">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Keep your face within the circle."
-                android:background="@color/colorDarkDarkGray"
-                app:autoSizeTextType="uniform" />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Your time in will be processed for approval."
+            android:background="@color/colorDarkDarkGray"
+            app:autoSizeTextType="uniform"/>
 
-            <FrameLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="18">
-                    <FrameLayout
-                        android:id="@+id/preview"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/circle_white_border" />
-                    <TextView
-                        android:text="1"
-                        android:autoSizeTextType="uniform"
-                        android:id="@+id/timer"
-                        android:gravity="center"
-                        app:autoSizeTextType="uniform"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-            </FrameLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18">
+        <FrameLayout
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:padding="@dimen/margin_lg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_white_border"/>
+        <TextView
+                android:text="1"
+                android:id="@+id/timer"
+                android:gravity="center"
+                app:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </FrameLayout>
 </LinearLayout>

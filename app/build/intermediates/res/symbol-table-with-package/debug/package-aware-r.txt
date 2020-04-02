@@ -1375,6 +1375,7 @@ id coordinator
 id custom
 id customPanel
 id cv_select_location
+id cv_take_picture
 id cycle
 id dark
 id decelerate
@@ -1661,6 +1662,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_confirm_take_picture
 layout dialog_employee_json
 layout dialog_timekeeper_location_select
 layout layout_spiiner_item_style

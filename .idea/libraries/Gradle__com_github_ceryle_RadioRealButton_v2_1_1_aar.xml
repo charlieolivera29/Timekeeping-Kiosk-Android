@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ceryle:RadioRealButton:v2.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea889b9396c7c53d90b606e3899bc371/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea889b9396c7c53d90b606e3899bc371/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/deabd2d7c8b86e967003d4fa126f8041/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/deabd2d7c8b86e967003d4fa126f8041/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ceryle/RadioRealButton/v2.1.1/92b0972f0951100b762741ac7ad3d8014de97431/RadioRealButton-v2.1.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ceryle/RadioRealButton/v2.1.1/73a2ccb7b10e884ab85f8aded82222cde31aca45/RadioRealButton-v2.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

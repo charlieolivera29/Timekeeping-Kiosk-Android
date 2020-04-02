@@ -57,7 +57,7 @@ class RandomImageCapture : AppCompatActivity() {
         g_date = intent.getSerializableExtra("Date") as String
         g_time = intent.getSerializableExtra("Time") as String
 
-        //val blink = AnimationUtils.loadAnimation(this,R.anim.blink)
+        val blink = AnimationUtils.loadAnimation(this,R.anim.blink)
 
         if (checkCameraHardware(this)) {
             mCamera = getCameraInstance()
@@ -90,8 +90,8 @@ class RandomImageCapture : AppCompatActivity() {
                 }
 
                 override fun onFinish() {
-                    //timer.setText("Smile! :)")
-                    //mPreview?.startAnimation(blink)
+                    timer.setText("")
+                    mPreview?.startAnimation(blink)
                     mCamera?.takePicture(null, null, mPicture)
                 }
             }.start()

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\56fb94cf662e1c2837ad3adbef7aaa97\AndroidManifest.xml:17:1-24:12
 MERGED from [com.valdesekamdem.library:md-toast:0.9.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\1d3737fcfe7b32f4694104833867ce50\AndroidManifest.xml:2:1-17:12
 MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\ea889b9396c7c53d90b606e3899bc371\AndroidManifest.xml:2:1-12:12
@@ -50,53 +50,53 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Acer\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\360060259d48d1bad6a96af86fc31b64\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\c80a0b50f77ad7e98445d5a3545f5811\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\c6620837bfb6f74fa0a2daba99369a07\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:3:11-35
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:3:11-35
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:5:5-78
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:5:5-78
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:9:5-78
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:9:5-78
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:9:22-76
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:11:5-64
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:11:5-64
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:11:22-62
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:11:22-62
 application
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:13:5-51:19
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:13:5-51:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\56fb94cf662e1c2837ad3adbef7aaa97\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\56fb94cf662e1c2837ad3adbef7aaa97\AndroidManifest.xml:22:5-20
 MERGED from [com.valdesekamdem.library:md-toast:0.9.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\1d3737fcfe7b32f4694104833867ce50\AndroidManifest.xml:11:5-15:19
@@ -132,83 +132,83 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Acer\.gradle\c
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\a6de2b2b27e775ef74482aa0e756f8e5\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:18:13-39
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:18:13-39
 	android:label
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:16:13-45
 	android:fullBackupContent
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:14:13-45
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:14:13-45
 	android:roundIcon
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:17:13-59
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:17:13-59
 	android:allowBackup
 		ADDED from [com.valdesekamdem.library:md-toast:0.9.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\1d3737fcfe7b32f4694104833867ce50\AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:15:13-54
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:15:13-54
 	android:theme
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:19:13-44
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:19:13-44
 activity#com.karl.kiosk.SettingsActivity
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:20:9-21:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:20:9-21:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:20:19-51
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:20:19-51
 activity#com.karl.kiosk.RandomImageCapture
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:22:9-23:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:22:9-23:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:22:19-53
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:22:19-53
 activity#com.karl.kiosk.CompanyList
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:24:9-25:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:24:9-25:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:24:19-46
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:24:19-46
 service#com.karl.kiosk.Services.LocationService
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:26:9-60
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:26:9-60
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:26:18-58
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:26:18-58
 activity#com.karl.kiosk.PendingUpdatesList
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:27:9-30:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:27:9-30:20
 	android:parentActivityName
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:29:17-59
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:29:17-59
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:28:17-51
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:28:17-51
 activity#com.karl.kiosk.Login
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:31:9-37:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:31:9-37:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:31:19-40
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:31:19-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:32:13-36:29
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:33:17-68
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:33:17-68
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:33:25-66
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:35:17-76
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:35:27-74
 activity#com.karl.kiosk.EnterPIN
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:38:9-40:61
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:38:9-40:61
 	android:parentActivityName
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:40:17-59
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:40:17-59
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:39:17-41
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:39:17-41
 activity#com.karl.kiosk.MainActivity
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:41:9-42:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:41:9-42:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:41:19-47
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:41:19-47
 activity#com.karl.kiosk.IdleScreen
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:43:9-44:20
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:43:9-44:20
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:43:19-45
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:43:19-45
 activity#com.karl.kiosk.AdminPageActivity
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:45:9-54
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:45:9-54
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:45:19-52
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:45:19-52
 meta-data#preloaded_fonts
-ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:48:9-50:60
+ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:48:9-50:60
 	android:resource
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:50:17-58
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:50:17-58
 	android:name
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml:49:17-47
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml:49:17-47
 uses-sdk
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\56fb94cf662e1c2837ad3adbef7aaa97\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\56fb94cf662e1c2837ad3adbef7aaa97\AndroidManifest.xml:20:5-44
 MERGED from [com.valdesekamdem.library:md-toast:0.9.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\1d3737fcfe7b32f4694104833867ce50\AndroidManifest.xml:7:5-9:41
@@ -301,18 +301,18 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Acer\.gradle\c
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\c80a0b50f77ad7e98445d5a3545f5811\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\c6620837bfb6f74fa0a2daba99369a07\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\c6620837bfb6f74fa0a2daba99369a07\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\71509bce62d3dcd3c332003b89ee549e\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Acer\AndroidStudioProjects\Kiosk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Acer\AndroidStudioProjects\Timekeeping-Kiosk-Android\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Acer\.gradle\caches\transforms-2\files-2.1\9ff949a352ae8b4984035dade4a9919c\AndroidManifest.xml:23:9-26:75
 	android:exported

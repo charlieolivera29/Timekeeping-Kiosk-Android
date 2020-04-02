@@ -2,6 +2,7 @@ package com.karl.kiosk
 
 import android.Manifest
 import android.app.AlertDialog
+import android.app.Dialog
 import android.content.ContentResolver
 import android.content.Context
 import android.content.Intent
@@ -17,6 +18,7 @@ import android.os.Handler
 import android.provider.MediaStore
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.support.v7.widget.CardView
 import android.text.InputFilter
 import android.text.InputType
 import android.view.Gravity
@@ -480,6 +482,7 @@ class EnterPIN : AppCompatActivity() {
     }
 
     private fun takePictureRandomly(entered_pin: String, time: String) {
+
         val percentage = session.getCapturePercentage().toInt()
         if (helper.randomChanceByPercentage(percentage)) {
 
@@ -491,7 +494,16 @@ class EnterPIN : AppCompatActivity() {
             camera_intent.putExtra("Date", g_date)
             camera_intent.putExtra("Time", g_time)
 
-            startActivityForResult(camera_intent, IMAGE_CAPTURE_REQUEST_CODE)
+
+            val confirmTakePicture = Dialog(this)
+            confirmTakePicture.setContentView(R.layout.dialog_confirm_take_picture)
+            confirmTakePicture.show()
+
+            val button_take_picture: CardView = confirmTakePicture.findViewById(R.id.cv_take_picture);
+
+            button_take_picture.setOnClickListener {
+                startActivityForResult(camera_intent, IMAGE_CAPTURE_REQUEST_CODE)
+            }
         } else {
 
             getUserLocation(id, entered_pin, time)
@@ -614,10 +626,10 @@ class EnterPIN : AppCompatActivity() {
         headers.put("t", session.getHeaders("t"))
         headers.put("token", session.getToken()!!)
 
-
         val call = client.checKPinWithImage(
-            "http://".plus(session.getIP()).plus("/clock/api/check"),
-            headers, user_id, pin, date, time, location, reference, api_token, link, file
+            //"http://".plus(session.getIP()).plus("/clock/api/check"),
+            "http://".plus(session.getIP()).plus("/adminbackend/api/photo-approval-store"),
+            headers, user_id, pin, date, time, location, reference, api_token, link, file, session.getLink()
         )
 
 
