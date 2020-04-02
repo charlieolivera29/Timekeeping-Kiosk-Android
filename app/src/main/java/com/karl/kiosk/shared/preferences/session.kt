@@ -346,10 +346,10 @@ class session(
         //return "timekeeping-kiosk.iplusapps.com/prod4"
 
         //live2
-        return "timekeeping.caimitoapps.com:8081"
+//        return "timekeeping.caimitoapps.com:8081"
 
         //Local
-        //return "192.168.137.1/timekeeping/tk"
+        return "192.168.1.96/timekeeping/timekeeping-backend"
     }
 
 

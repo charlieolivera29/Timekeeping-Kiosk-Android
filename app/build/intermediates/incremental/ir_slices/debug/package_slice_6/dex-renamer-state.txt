@@ -1,4 +1,4 @@
-#Thu Dec 19 16:19:37 SGT 2019
-base.0=C\:\\Users\\Acer\\AndroidStudioProjects\\Kiosk\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+#Tue Jan 07 13:49:23 SGT 2020
+base.0=C\:\\Users\\Acer\\AndroidStudioProjects\\Timekeeping-Kiosk-Android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
 path.0=classes.dex
 renamed.0=classes.dex

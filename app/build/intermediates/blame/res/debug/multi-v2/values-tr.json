@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Acer\\AndroidStudioProjects\\Kiosk\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "C:\\Users\\Acer\\AndroidStudioProjects\\Timekeeping-Kiosk-Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Acer\\.gradle\\caches\\transforms-2\\files-2.1\\5d9032aaff59282cbf3362607770274c\\res\\values-tr\\values.xml",
