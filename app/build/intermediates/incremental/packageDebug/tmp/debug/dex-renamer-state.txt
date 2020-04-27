@@ -1,4 +1,4 @@
-#Mon Mar 16 16:18:35 SGT 2020
-base.0=C\:\\Users\\Acer\\AndroidStudioProjects\\Timekeeping-Kiosk-Android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Fri Apr 03 21:40:16 AWST 2020
+base.0=/home/karlllllllllll/AndroidStudioProjects/Timekeeping-Kiosk-Android/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

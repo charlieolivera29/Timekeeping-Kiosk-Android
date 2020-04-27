@@ -19,12 +19,14 @@ import android.content.res.Resources
 import android.os.Build
 import android.os.CountDownTimer
 import android.os.Handler
+import android.support.design.widget.TabLayout
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.CardView
 import android.text.Editable
 import android.text.InputFilter
 import android.text.InputType
 import android.text.TextWatcher
+import android.util.Log
 import android.view.*
 import android.view.Gravity.*
 import android.view.View.*
@@ -107,7 +109,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
         checkIfMustLogout()
 
         search_bar.text.clear()
-        button_all.performClick()
+        //button_all.performClick()
 
         //If flagged must refresh, calls getUsersFromAPI
         mustRefresh()
@@ -185,7 +187,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
         internetListener(mHandler)
 
         //For search bar
-        searchBarListener(this)
+        searchBarListener()
 
         //Calls getUsersFromAPI function when empty else -> adds users to recycler view
         requestUsersIfEmpty()
@@ -305,6 +307,8 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
 
         val url = "http://$root_IP/adminbackend/api/location/employee/$location_id?api_token=$api_token&link=$link"
 
+        Log.d("karllllllllll",url)
+
         val stringRequest = object : StringRequest(Request.Method.GET, url,
             Response.Listener { response ->
 
@@ -398,13 +402,15 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
 
     //Enables/ Disables sort buttons
     private fun filterButtonsEnable(boolean: Boolean) {
-        button_all.isEnabled = boolean
-        button_on_site.isEnabled = boolean
-        button_not_on_site.isEnabled = boolean
+
+        sort_group.isEnabled = boolean
+//        button_all.isEnabled = boolean
+//        button_on_site.isEnabled = boolean
+//        button_not_on_site.isEnabled = boolean
     }
 
     //When search field is editted
-    private fun searchBarListener(context: Context) {
+    private fun searchBarListener() {
 
         search_bar.addTextChangedListener(
             object : TextWatcher {
@@ -413,7 +419,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
                     val filter = search_bar.text.toString()
 
                     if (filter.isNotEmpty()) {
-                        //button_all.performClick()
+//                        button_all.performClick()
                         filterUserList(filter)
                     } else {
                         //Crashes app
@@ -904,34 +910,61 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
     //Initialize button groups
     private fun groupSortButtons() {
 
-        sort_group.setOnClickedButtonListener { button, position ->
+//        sort_group.setOnClickedButtonListener { button, position ->
+//
+//            when (position) {
+//                0 -> {
+//                    search_bar.setText("")
+//                    recyclerViewReset()
+//                }
+//                1 -> {
+//                    search_bar.setText("")
+//                    sortOnSite()
+//                }
+//                2 -> {
+//                    search_bar.setText("")
+//                    //sortASC()
+//                    sortNotOnSite()
+//                }
+//            }
+//        }
 
-            when (position) {
-                0 -> {
-                    search_bar.setText("")
-                    recyclerViewReset()
-                }
-                1 -> {
-                    search_bar.setText("")
-                    sortOnSite()
-                }
-                2 -> {
-                    search_bar.setText("")
-                    //sortASC()
-                    sortNotOnSite()
+        sort_group.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+
+                when (tab!!.position) {
+                    0 -> {
+                        search_bar.setText("")
+                        recyclerViewReset()
+                    }
+                    1 -> {
+                        search_bar.setText("")
+                        sortOnSite()
+                    }
+                    2 -> {
+                        search_bar.setText("")
+                        //sortASC()
+                        sortNotOnSite()
+                    }
                 }
             }
-        }
 
-        sort_group.setOnPositionChangedListener { button, currentPosition, lastPosition ->
-
-            if (lastPosition == 1 && currentPosition == 2) {
-                recyclerViewReset()
-                //sortASC()
-                sortNotOnSite()
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
             }
 
-        }
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+        })
+
+//        sort_group.setOnPositionChangedListener { button, currentPosition, lastPosition ->
+//
+//            if (lastPosition == 1 && currentPosition == 2) {
+//                recyclerViewReset()
+//                //sortASC()
+//                sortNotOnSite()
+//            }
+//
+//        }
     }
 
     //Sorts users alphabetically
@@ -1430,7 +1463,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener {
         }
         R.id.action_refresh_button -> {
 
-            button_all.performClick()
+//            button_all.performClick()
             getUsersFromAPI()
 
             true

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Kiosk</string>
     <string name="loading_clock">Loading Clock...</string>
+
+
+    <string name="tab_text_1">All</string>
+    <string name="tab_text_2">On Site</string>
+    <string name="tab_text_3">Not On Site</string>
+
 </resources>

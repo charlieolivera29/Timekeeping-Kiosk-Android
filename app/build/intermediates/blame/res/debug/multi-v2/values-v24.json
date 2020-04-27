@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Acer\\AndroidStudioProjects\\Timekeeping-Kiosk-Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "/home/karlllllllllll/AndroidStudioProjects/Timekeeping-Kiosk-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Acer\\.gradle\\caches\\transforms-2\\files-2.1\\03b8ea5a4bfe3a3d5761f51d4b03c0ce\\res\\values-v24\\values-v24.xml",
+                    "source": "/home/karlllllllllll/.gradle/caches/transforms-2/files-2.1/3b923186d37777108004bcec75919e57/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Acer\\.gradle\\caches\\transforms-2\\files-2.1\\738ee531af852097b332fcf8d21e974f\\res\\values-v24\\values-v24.xml",
+                    "source": "/home/karlllllllllll/.gradle/caches/transforms-2/files-2.1/4fc7f01709b19f3b09180b70347fad83/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

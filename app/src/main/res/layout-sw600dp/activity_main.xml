@@ -94,55 +94,91 @@
                     android:singleLine="true"
                     android:textColor="@color/colorWhite"
                     app:backgroundTint="@color/colorWhite" />
-                <co.ceryle.radiorealbutton.RadioRealButtonGroup
-                    android:id="@+id/sort_group"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    app:rrbg_backgroundColor="@color/colorDarkDarkGray"
-                        app:rrbg_animateDrawables_enter="overshoot"
-                        app:rrbg_animateTexts_enter="overshoot"
-                        app:rrbg_selectorColor="@color/colorInfo"
-                        app:rrbg_selectorSize="6dp">
 
-                    <co.ceryle.radiorealbutton.RadioRealButton
+                <android.support.design.widget.TabLayout
+                        android:id="@+id/sort_group"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:tabMode="fixed"
+                        app:tabGravity="fill"
+                        app:backgroundTint="@color/colorClockText"
+                        app:tabIndicatorColor="@color/colorClockText"
+                        app:tabRippleColor="@color/colorClockText"
+                        app:tabTextColor="@color/colorGray"
+                        app:tabSelectedTextColor="@color/colorClockText"
+                        >
+
+                    <android.support.design.widget.TabItem
                             android:id="@+id/button_all"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:rrb_drawableHeight="36dp"
-                            app:rrb_drawablePadding="8dp"
-                            app:rrb_drawableWidth="36dp"
-                            app:rrb_ripple="true"
-                            app:rrb_rippleColor="@color/colorWhite"
-                            app:rrb_text="All"
-                            app:rrb_textColor="@color/colorWhite"/>
+                            android:text="@string/tab_text_1"/>
 
-                    <co.ceryle.radiorealbutton.RadioRealButton
+                    <android.support.design.widget.TabItem
                             android:id="@+id/button_on_site"
-                            android:layout_width="103dp"
-                            android:layout_height="12dp"
-                            app:rrb_drawableGravity="right"
-                            app:rrb_drawableHeight="36dp"
-                            app:rrb_drawablePadding="8dp"
-                            app:rrb_drawableWidth="36dp"
-                            app:rrb_ripple="true"
-                            app:rrb_rippleColor="@color/colorWhite"
-                            app:rrb_text="On Site"
-                            app:rrb_textColor="@color/colorWhite"/>
-
-                    <co.ceryle.radiorealbutton.RadioRealButton
-                            android:id="@+id/button_not_on_site"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:rrb_drawableHeight="36dp"
-                            app:rrb_drawablePadding="8dp"
-                            app:rrb_drawableWidth="36dp"
-                            app:rrb_ripple="true"
-                            app:rrb_rippleColor="@color/colorWhite"
-                            app:rrb_text="Not On Site"
-                            app:rrb_textColor="@color/colorWhite"/>
+                            android:text="@string/tab_text_2"/>
 
-                </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+                    <android.support.design.widget.TabItem
+                            android:id="@+id/button_not_on_site"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tab_text_3"/>
+
+                    <!--                        <android.support.design.widget.TabItem-->
+                    <!--                                android:icon="@drawable/ic_android"/>-->
+
+                </android.support.design.widget.TabLayout>
+<!--                <co.ceryle.radiorealbutton.RadioRealButtonGroup-->
+<!--                    android:id="@+id/sort_group"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    app:rrbg_backgroundColor="@color/colorDarkDarkGray"-->
+<!--                        app:rrbg_animateDrawables_enter="overshoot"-->
+<!--                        app:rrbg_animateTexts_enter="overshoot"-->
+<!--                        app:rrbg_selectorColor="@color/colorInfo"-->
+<!--                        app:rrbg_selectorSize="6dp">-->
+
+<!--                    <co.ceryle.radiorealbutton.RadioRealButton-->
+<!--                            android:id="@+id/button_all"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:rrb_drawableHeight="36dp"-->
+<!--                            app:rrb_drawablePadding="8dp"-->
+<!--                            app:rrb_drawableWidth="36dp"-->
+<!--                            app:rrb_ripple="true"-->
+<!--                            app:rrb_rippleColor="@color/colorWhite"-->
+<!--                            app:rrb_text="All"-->
+<!--                            app:rrb_textColor="@color/colorWhite"/>-->
+
+<!--                    <co.ceryle.radiorealbutton.RadioRealButton-->
+<!--                            android:id="@+id/button_on_site"-->
+<!--                            android:layout_width="103dp"-->
+<!--                            android:layout_height="12dp"-->
+<!--                            app:rrb_drawableGravity="right"-->
+<!--                            app:rrb_drawableHeight="36dp"-->
+<!--                            app:rrb_drawablePadding="8dp"-->
+<!--                            app:rrb_drawableWidth="36dp"-->
+<!--                            app:rrb_ripple="true"-->
+<!--                            app:rrb_rippleColor="@color/colorWhite"-->
+<!--                            app:rrb_text="On Site"-->
+<!--                            app:rrb_textColor="@color/colorWhite"/>-->
+
+<!--                    <co.ceryle.radiorealbutton.RadioRealButton-->
+<!--                            android:id="@+id/button_not_on_site"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:rrb_drawableHeight="36dp"-->
+<!--                            app:rrb_drawablePadding="8dp"-->
+<!--                            app:rrb_drawableWidth="36dp"-->
+<!--                            app:rrb_ripple="true"-->
+<!--                            app:rrb_rippleColor="@color/colorWhite"-->
+<!--                            app:rrb_text="Not On Site"-->
+<!--                            app:rrb_textColor="@color/colorWhite"/>-->
+
+<!--                </co.ceryle.radiorealbutton.RadioRealButtonGroup>-->
 
             </LinearLayout>
         </LinearLayout>

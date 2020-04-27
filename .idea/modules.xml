@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Timekeeping-Kiosk-Android.iml" filepath="$PROJECT_DIR$/Timekeeping-Kiosk-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Timekeeping-Kiosk-Android.iml" filepath="$PROJECT_DIR$/Timekeeping-Kiosk-Android.iml" group="Timekeeping-Kiosk-Android" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Timekeeping-Kiosk-Android/app" />
     </modules>
   </component>
 </project>
