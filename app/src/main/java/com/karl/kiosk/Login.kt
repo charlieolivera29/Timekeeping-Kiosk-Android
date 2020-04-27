@@ -13,6 +13,7 @@ import android.os.Handler
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.CardView
+import android.util.Log
 import android.view.View
 import android.widget.*
 import com.android.volley.DefaultRetryPolicy
@@ -46,6 +47,10 @@ class Login : AppCompatActivity() {
         super.onResume()
 
         checkAndAskSettingsRequirements()
+
+        emailField.setText("makati@zol.com")
+        passwordField.setText("tk123456")
+        linkField.setText("zolvere")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -128,6 +133,8 @@ class Login : AppCompatActivity() {
                 Request.Method.POST, url,
                 Response.Listener { response ->
 
+                    //Log.d("http_blocked",response)
+
                     val strResp = response.toString()
                     val jsonObj = JSONObject(strResp)
                     val status = jsonObj.get("status").toString()
@@ -160,6 +167,8 @@ class Login : AppCompatActivity() {
                     }
 
                 }, Response.ErrorListener { error ->
+
+                    //Log.d("http_blocked",error.toString())
 
                     error.printStackTrace()
 
@@ -437,10 +446,13 @@ class Login : AppCompatActivity() {
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
-                val branch = timekeeperLocations[position] as JSONObject
-
-                selectedLocation = branch.getString("branch_id")
-
+                try {
+                    val branch = timekeeperLocations[position] as JSONObject
+                    selectedLocation = branch.getString("branch_id")
+                }catch (error:Exception)
+                {
+                    Log.d("karl_69",error.toString())
+                }
             }
         }
 

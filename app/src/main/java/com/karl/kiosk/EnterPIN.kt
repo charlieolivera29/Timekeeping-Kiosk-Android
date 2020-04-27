@@ -21,6 +21,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.CardView
 import android.text.InputFilter
 import android.text.InputType
+import android.util.Log
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
@@ -128,6 +129,7 @@ class EnterPIN : AppCompatActivity() {
         helper = helper(this)
     }
 
+    // Runs Clock
     private fun runClock(mHandler: Handler) {
 
         session = session(applicationContext)
@@ -150,6 +152,7 @@ class EnterPIN : AppCompatActivity() {
 
     }
 
+    // For retrieving locations
     private fun instantiateLocationVariables() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         mLocationRequest = LocationRequest()
@@ -180,6 +183,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Sets user time in and time out for the day
     private fun setUserTime() {
         val time_in_field = findViewById<TextView>(R.id.time_in_field)
         val time_out_field = findViewById<TextView>(R.id.time_out_field)
@@ -248,7 +252,8 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
-    // User data from intent
+    // When Employee image is clicked in the MainActivity
+    // It passes a String key an value of the selected user
     private fun getUserDataFromIntent() {
         id = intent.getSerializableExtra("userId") as String
         fname = intent.getSerializableExtra("firstName") as String
@@ -260,6 +265,8 @@ class EnterPIN : AppCompatActivity() {
         user_pin = intent.getSerializableExtra("user_pin") as String
     }
 
+    // When check button is pressed,
+    // Check if all fields are filled
     private fun checkPINFields(PIN1: String, PIN2: String, PIN3: String, PIN4: String): String {
 
         val pin1HasValue = PIN1 != ""
@@ -277,6 +284,8 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // When Pin button is pressed
+    // Sets pressed value to first empty pin
     private fun setTo(PIN1: TextView, PIN2: TextView, PIN3: TextView, PIN4: TextView, value: String) {
         if (value == "clear") {
             if (PIN4.text.toString().trim().length > 0) {
@@ -335,6 +344,9 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // MD5 hash checker
+    // Compares hashed pin to hashed entered pin
+    // Returns 1 if correct
     private fun checkUserPIN(user_pin: String, entered_password: String): Int {
 
         val md = MessageDigest.getInstance("MD5")
@@ -362,6 +374,8 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Initializes buttons
+    // Sets Listeners
     private fun setButtonAndPINSListener() {
         // PIN Fields
         val PIN1 = findViewById<TextView>(R.id.PINField1)
@@ -481,11 +495,15 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // For image capture
     private fun takePictureRandomly(entered_pin: String, time: String) {
 
+        // Retrieves captured percentage
         val percentage = session.getCapturePercentage().toInt()
-        if (helper.randomChanceByPercentage(percentage)) {
 
+        // If random number is in range of capture percentage
+        // Takes picture using RandomImageCapture class
+        if (helper.randomChanceByPercentage(percentage)) {
             g_entered_pin = entered_pin
             g_time = time
 
@@ -494,7 +512,7 @@ class EnterPIN : AppCompatActivity() {
             camera_intent.putExtra("Date", g_date)
             camera_intent.putExtra("Time", g_time)
 
-
+            // Confirm modal
             val confirmTakePicture = Dialog(this)
             confirmTakePicture.setContentView(R.layout.dialog_confirm_take_picture)
             confirmTakePicture.show()
@@ -502,6 +520,9 @@ class EnterPIN : AppCompatActivity() {
             val button_take_picture: CardView = confirmTakePicture.findViewById(R.id.cv_take_picture);
 
             button_take_picture.setOnClickListener {
+                // Takes Image
+                // After successful image capture
+                // onActivityResult is triggered
                 startActivityForResult(camera_intent, IMAGE_CAPTURE_REQUEST_CODE)
             }
         } else {
@@ -510,6 +531,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // User location
     private fun getUserLocation(id: String, entered_pin: String, time: String) {
 
         val last_location = session.getLastLocation()
@@ -581,6 +603,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Sends to backend with image
     private fun sendUserTimeWithImage(p_id: String, p_pin_input: String, p_time: String, p_location: String) {
 
         val intent_splash_screen = Intent(this, IdleScreen::class.java)
@@ -625,6 +648,12 @@ class EnterPIN : AppCompatActivity() {
         headers.put("d", session.getHeaders("d"))
         headers.put("t", session.getHeaders("t"))
         headers.put("token", session.getToken()!!)
+
+        Log.d("params-headers","token:" + session.getAPIToken())
+        Log.d("params-headers","user-id:" + p_id)
+        Log.d("params-headers","date:" + session.getDate())
+        Log.d("params-headers","location:" + p_location)
+        Log.d("params-headers","time:" + p_time)
 
         val call = client.checKPinWithImage(
             //"http://".plus(session.getIP()).plus("/clock/api/check"),
@@ -685,6 +714,7 @@ class EnterPIN : AppCompatActivity() {
         })
     }
 
+    // Sends to backend with no image
     private fun sendUserTime(id: String, pin_input: String, time: String, location: String) {
 
         val date: String = session.getDate()
@@ -812,6 +842,8 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // If cannot send
+    // Returns boolean
     private fun onDataIsUnsendable(id: String, time: String, date: String, pin: String, location: String): Boolean {
 
         val has_clocked_out_today = (addTimetoLocalUsers(id, time, date, false))
@@ -820,6 +852,7 @@ class EnterPIN : AppCompatActivity() {
         return true
     }
 
+    // Sets user time to user even if data was not sent
     private fun addTimetoLocalUsers(user_id: String, time: String, date: String, was_data_sent: Boolean): Boolean {
 
         val users = session.getUsers()
@@ -876,6 +909,7 @@ class EnterPIN : AppCompatActivity() {
         return has_clocked_out_today
     }
 
+    // Creates a pending item
     private fun addToPendingUpdates(
         user_id: String,
         time: String,
@@ -974,6 +1008,8 @@ class EnterPIN : AppCompatActivity() {
         return true
     }
 
+
+    // Resets PINS
     private fun clearAll() {
 
         val PIN1 = findViewById<TextView>(R.id.PINField1)
@@ -993,6 +1029,8 @@ class EnterPIN : AppCompatActivity() {
         PIN1.requestFocus()
     }
 
+    // If any permission is not granted
+    // Blocks usage if denied
     private fun checkAllPermissions() {
 
         if (ContextCompat.checkSelfPermission(
@@ -1017,6 +1055,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Requests user to provide app permissions
     private fun requestAllPermission() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -1035,6 +1074,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Checks Date, Timezone and GPS is enabled
     private fun checkAndAskSettingsRequirements() {
 
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager?
@@ -1053,6 +1093,7 @@ class EnterPIN : AppCompatActivity() {
         }
     }
 
+    // Request disabled settings modal
     private fun showDateTimeDisabledAlertToUser() {
         val alertDialogBuilder = AlertDialog.Builder(this, R.style.AlertDialogCustom)
         alertDialogBuilder.setMessage("Automatic time is disabled in your device.\nPlease enable it to use the app.")
@@ -1071,6 +1112,7 @@ class EnterPIN : AppCompatActivity() {
         alert.show()
     }
 
+    // Shows if gps is disabled
     private fun showGPSDisabledAlertToUser() {
         val alertDialogBuilder = AlertDialog.Builder(this, R.style.AlertDialogCustom)
         alertDialogBuilder.setMessage("GPS is disabled in your device.\nPlease enable it and select High accuracy.")
@@ -1089,14 +1131,13 @@ class EnterPIN : AppCompatActivity() {
         alert.show()
     }
 
-
     override fun onResume() {
         super.onResume()
 
         checkAndAskSettingsRequirements()
-
     }
 
+    // Triggered After Requesting Persmission to App
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
@@ -1169,16 +1210,21 @@ class EnterPIN : AppCompatActivity() {
 //        }
     }
 
+    // Cannot retrieve file type using file
+    // Returns Static
+    // Always image file type
     fun getMimeType(path: String): String {
         var type = "image/jpeg" // Default Value
         val extension = MimeTypeMap.getFileExtensionFromUrl(path);
-//        if (extension != null) {
-//            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension)
-//        }
+
+        // Not Working
+        // if (extension != null) {
+        //    type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension)
+        // }
         return type
     }
 
-    //DIALOGS
+    // DIALOGS
     private fun changePinDialog() {
         var change_pin_dialog_builder = AlertDialog.Builder(this, R.style.ChangePinAlertDialogCustom)
         change_pin_dialog_builder.setTitle("Change PIN:")
@@ -1294,6 +1340,7 @@ class EnterPIN : AppCompatActivity() {
         change_pin_dialog.show()
     }
 
+    // Change PIN API
     private fun sendChangePIN(old_pin: String, pin: String, pin_confirmation: String) {
 
         val internet: Boolean = helper.isNetworkConnected()

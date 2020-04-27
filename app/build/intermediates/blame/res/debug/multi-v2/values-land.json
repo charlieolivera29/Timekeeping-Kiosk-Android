@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Acer\\AndroidStudioProjects\\Timekeeping-Kiosk-Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/home/karlllllllllll/AndroidStudioProjects/Timekeeping-Kiosk-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Acer\\.gradle\\caches\\transforms-2\\files-2.1\\56fb94cf662e1c2837ad3adbef7aaa97\\res\\values-land\\values-land.xml",
+                    "source": "/home/karlllllllllll/.gradle/caches/transforms-2/files-2.1/08182bbf3944ede7bd5f77da35ac487d/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Acer\\.gradle\\caches\\transforms-2\\files-2.1\\03b8ea5a4bfe3a3d5761f51d4b03c0ce\\res\\values-land\\values-land.xml",
+                    "source": "/home/karlllllllllll/.gradle/caches/transforms-2/files-2.1/3b923186d37777108004bcec75919e57/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

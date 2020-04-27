@@ -349,7 +349,7 @@ class session(
 //        return "timekeeping.caimitoapps.com:8081"
 
         //Local
-        return "192.168.1.96/timekeeping/timekeeping-backend"
+        return "192.168.0.22/timekeeping/timekeeping-backend"
     }
 
 
